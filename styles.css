@@ -1,0 +1,41 @@
+body {
+    background-image: url("https://i.ibb.co/pQBYQLJ/Screen-Shot-2020-12-17-at-3-07-50-PM.png");
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#coming_soon {
+    position: absolute;
+	top:-100;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    margin: auto;
+    animation: float 6s ease-in-out infinite;
+}
+
+a {
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+@keyframes float {
+	0% {
+		/* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+		transform: translatey(0px);
+	}
+	50% {
+		/* box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2); */
+		transform: translatey(-20px);
+	}
+	100% {
+		/* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+		transform: translatey(0px);
+	}
+}
